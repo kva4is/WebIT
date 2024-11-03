@@ -1,0 +1,261 @@
+<html>
+ <head>
+  <title>
+   White Hack
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .product {
+            background-color: #1a1a1a;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            width: 23%;
+            margin-bottom: 20px;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        .product h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin: 10px 0 5px;
+        }
+        .product p {
+            font-size: 12px;
+            margin: 5px 0;
+        }
+        .product .price {
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .chat-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .chat-icon i {
+            color: #fff;
+            font-size: 24px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #1a1a1a;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <h1>
+    WHITE HACK
+   </h1>
+  </div>
+  <div class="nav">
+   <a id="socialMediaLink">
+    СОЦСЕТИ
+   </a>
+   <a href="https://t.me/KVA4is" target="_blank">
+    ПОДДЕРЖКА
+   </a>
+   <a id="reviewsLink">
+    ОТЗЫВЫ
+   </a>
+  </div>
+  <div class="container">
+   <div class="products">
+    <div class="product">
+     <img alt="Photo of code" height="400" src="https://gb.ru/blog/wp-content/uploads/2021/11/2-13.jpg.webp" width="300"/>
+     <h3>
+      Проверка шифрования данных
+     </h3>
+     <p>
+      Займёт N времени
+     </p>
+     <p class="price">
+      2 000 р.
+     </p>
+    </div>
+    <div class="product">
+     <img alt="Photo of code" height="400" src="https://media.licdn.com/dms/image/C4E12AQG4qnZc4eWjUQ/article-cover_image-shrink_720_1280/0/1636052796092?e=2147483647&v=beta&t=gcMg4LNnqJHsRzBSZegBq7vC2qQdICXdlsdozKoWlxo" width="300"/>
+     <h3>
+        DDoS
+     </h3>
+     <p>
+      Займёт час/два
+     </p>
+     <p class="price">
+      3 000 р.
+     </p>
+    </div>
+    <div class="product">
+     <img alt="Photo of code" height="400" src="https://i.sstatic.net/ccSNU.png" width="300"/>
+     <h3>
+        SQL-инъекции
+     </h3>
+     <p>
+      Займёт N количство времени
+     </p>
+     <p class="price">
+      6 000 р.
+     </p>
+    </div>
+    <div class="product">
+     <img alt="Photo of code" height="400" src="https://media.tproger.ru/uploads/2018/04/nick-karvounis-381259-unsplash.jpg" width="300"/>
+     <h3>
+      Спам
+     </h3>
+     <p>
+      Отправка 1-2 дня
+     </p>
+     <p class="price">
+      500 р.
+     </p>
+    </div>
+   </div>
+  </div>
+  <a href="https://t.me/KVA4is" target="_blank">
+   <div class="chat-icon">
+    <i class="fas fa-comment">
+    </i>
+   </div>
+  </a>
+  <div class="modal" id="socialMediaModal">
+   <div class="modal-content">
+    <span class="close" id="closeSocialMediaModal">
+     ×
+    </span>
+    <h2>
+     Свяжитесь со мной
+    </h2>
+    <p>
+     Telegram: @KVA4is
+    </p>
+    <p>
+     Instagram: @KVA4IS (аватарка с котом в коробке)
+    </p>
+    <p>
+     Email: d8278618@gmail.com
+    </p>
+   </div>
+  </div>
+  <div class="modal" id="reviewsModal">
+   <div class="modal-content">
+    <span class="close" id="closeReviewsModal">
+     ×
+    </span>
+    <h2>
+     Тут будут ваши отзывы
+    </h2>
+   </div>
+  </div>
+  <script>
+   var socialMediaModal = document.getElementById("socialMediaModal");
+        var reviewsModal = document.getElementById("reviewsModal");
+        var socialMediaLink = document.getElementById("socialMediaLink");
+        var reviewsLink = document.getElementById("reviewsLink");
+        var closeSocialMediaModal = document.getElementById("closeSocialMediaModal");
+        var closeReviewsModal = document.getElementById("closeReviewsModal");
+
+        socialMediaLink.onclick = function() {
+            socialMediaModal.style.display = "block";
+        }
+
+        reviewsLink.onclick = function() {
+            reviewsModal.style.display = "block";
+        }
+
+        closeSocialMediaModal.onclick = function() {
+            socialMediaModal.style.display = "none";
+        }
+
+        closeReviewsModal.onclick = function() {
+            reviewsModal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == socialMediaModal) {
+                socialMediaModal.style.display = "none";
+            }
+            if (event.target == reviewsModal) {
+                reviewsModal.style.display = "none";
+            }
+        }
+  </script>
+ </body>
+</html>
